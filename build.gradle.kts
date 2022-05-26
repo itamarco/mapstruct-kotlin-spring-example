@@ -22,7 +22,6 @@ dependencies {
     val mapstructVersion = "1.4.2.Final"
 
     implementation("org.springframework.boot:spring-boot-starter")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
@@ -32,7 +31,6 @@ dependencies {
     kapt("org.mapstruct:mapstruct-processor:$mapstructVersion")
     kaptTest("org.mapstruct:mapstruct-processor:$mapstructVersion")
 }
-
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
